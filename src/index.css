@@ -6,7 +6,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: rgb(255, 253, 253);
 }
 
 /* Container Elements */
