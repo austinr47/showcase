@@ -25,12 +25,17 @@ class FilterObject extends Component {
     }
 
     assignNumbers(userInput) {
-        var unFilter = [];
         var filter = [];
+        var unFilteredArray = this.state.unFilteredArray;
 
+        var arr = userInput.split(',');
+        for(var i = 0; i < unFilteredArray.length; i++) {
+            if(unFilteredArray[i].hasOwnProperty(userInput)){
+                filter.push(unFilteredArray[i]);
+                }
+            }
         
-        
-        
+    
         
         this.setState({
             filteredArray: filter,
