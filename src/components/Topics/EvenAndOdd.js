@@ -23,10 +23,11 @@ class EvenAndOdd extends Component {
 
         var arr= userInput.split(',');
         for(var i = 0; i < arr.length; i++) {
-            if(arr[i] % 2 === 0) {
-                even.push(arr[i])
-            } else if (arr[i] % 2 !== 0) {
-                odd.push(arr[i])}
+            if ( arr[i] % 2 === 0 ) {
+                even.push( parseInt(arr[i], 10) );
+              } else {
+                odd.push( parseInt(arr[i], 10) );
+              }
         }
         
         this.setState({
