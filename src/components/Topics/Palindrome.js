@@ -16,6 +16,21 @@ class Palindrome extends Component {
         })
     }
 
+    filterString(userInput) {    
+        var arr = '';
+        for (var i = 0; i < userInput.length / 2; i++) {
+            if (userInput.charAt(i) !== userInput.charAt(userInput.length - 1 - i)) {
+                arr = false;
+            }
+            arr = true;
+        }
+        
+        this.setState({
+            palindrome: arr,
+        })
+        
+        }
+
 
   render() {
     return(
